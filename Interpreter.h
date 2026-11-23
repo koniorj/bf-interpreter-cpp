@@ -14,7 +14,7 @@ class Interpreter
 
 public:
     explicit Interpreter(std::string input_code) :
-    code(std::move(input_code)), array_pointer(0) , code_pointer(0) {}
+    array_pointer(0), code(std::move(input_code)) , code_pointer(0) {}
 
     void run();
 };
