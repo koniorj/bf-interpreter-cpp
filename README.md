@@ -4,9 +4,19 @@ A simple, lightweight Brainfuck interpreter written in modern C++.
 
 ## Overview
 
-Brainfuck is an esoteric programming language created in 1993 by Urban Müller, notable for its extreme minimalism. The language consists of only eight simple commands and an instruction pointer.
+Brainfuck is an extremely tiny, esoteric programming language, created in 1993 by Urban Müller.
+It uses only eight symbols to do math and change data, and despite that - it is Turing-complete.
 
-This project implements a basic interpreter capable of parsing and executing Brainfuck code, built with CMake.
+```cpp
+> Move the Pointer to the right
+< Move the Pointer to the left
++ Increment the current cell
+- Decrement the current cell
+. Output the character signified by the current cell
+, Input a character and store it in the current cell
+[ Jump to the matching `]` if the current value is 0
+] Jump to the matching `[` if the current value is nonzero
+```
 
 ## Project Structure
 
